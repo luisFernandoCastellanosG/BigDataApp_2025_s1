@@ -5,3 +5,4 @@ python-dotenv
 bcrypt
 pandas
 numpy
+elasticsearch==8.11.0
