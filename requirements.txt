@@ -1,4 +1,15 @@
-Flask
-pymongo
-gunicorn
-elasticSearch
+Flask==3.0.0
+pymongo==4.6.0
+python-dotenv==1.0.0
+bcrypt==4.1.2
+elasticsearch==8.11.0
+spacy==3.7.2
+transformers==4.36.0
+sentence-transformers==2.2.2
+nltk==3.8.1
+pandas==2.1.4
+numpy==1.26.2
+scikit-learn==1.3.2
+PyPDF2==3.0.1
+
+python -m spacy download es_core_news_lg

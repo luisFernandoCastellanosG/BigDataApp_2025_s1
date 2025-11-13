@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Panel Admin - BigData Project{% endblock %}
+{% block content %}
+                Panel Admin
+                            {{ session.usuario }}
+                            Salir
+                    Panel de Administración
+                Gestiona usuarios, ElasticSearch y carga de documentos
+            {% if session.permisos.admin_usuarios %}
+                            Administrar Usuarios
+                            Crear, editar y eliminar usuarios del sistema
+                            Disponible
+            {% endif %}
+            {% if session.permisos.admin_elastic %}
+                            Administrar Elastic
+                            Gestionar índices y estructura de ElasticSearch
+                            Disponible
+            {% endif %}
+            {% if session.permisos.admin_data_elastic %}
+                            Cargar Archivos
+                            Subir y procesar documentos con PLN
+                            Disponible
+            {% endif %}
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important;
+}
+
+{% endblock %}
