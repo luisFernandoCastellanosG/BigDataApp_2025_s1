@@ -91,4 +91,6 @@ if __name__ == '__main__':
     
     print("="*50 + "\n")
     
-    app.run(debug=True, port=5000)
+    # Usar puerto dinámico para Render.com
+    #port = int(os.environ.get('PORT', 5000))
+    #app.run(host='0.0.0.0', debug=False, port=port)

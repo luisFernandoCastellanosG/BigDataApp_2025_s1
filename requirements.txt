@@ -5,4 +5,5 @@ python-dotenv
 bcrypt
 pandas
 numpy
+requests
 elasticsearch==8.11.0
